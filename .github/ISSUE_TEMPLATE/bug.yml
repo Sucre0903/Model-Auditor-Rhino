@@ -1,0 +1,23 @@
+name: 问题反馈 · Bug report
+description: 提交安装、扫描、定位或导出问题 / Report an installation or plug-in issue.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: 版本 · Versions
+      description: 插件版本、Rhino 8 完整版本号及 Windows 版本 / Plug-in, exact Rhino build and Windows version.
+      placeholder: Model Auditor 0.9.4 / Rhino 8.28 (full build) / Windows 11 x64
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与结果 · Steps and results
+      description: 写明安装方式、预期结果与实际结果 / Include the install method and what you expected and observed.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 日志或截图 · Log or screenshot
+      description: 可附上相关报错或示例模型。请先移除本地用户名、客户名称及私有文件路径。 / Optional. Remove private information before sharing.

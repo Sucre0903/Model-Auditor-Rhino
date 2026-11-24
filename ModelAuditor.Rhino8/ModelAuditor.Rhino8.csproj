@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ModelAuditor</AssemblyName>
+    <RootNamespace>ModelAuditor</RootNamespace>
+    <TargetExt>.rhp</TargetExt>
+    <Version>0.9.4</Version>
+    <FileVersion>0.9.4.0</FileVersion>
+    <AssemblyVersion>0.9.4.0</AssemblyVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon"
+                      Version="8.28.26041.11001"
+                      IncludeAssets="compile;build" />
+    <PackageReference Include="RhinoWindows"
+                      Version="8.28.26041.11001"
+                      IncludeAssets="compile;build" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/ModelAudit.ico" LogicalName="ModelAuditor.Resources.ModelAudit.ico" />
+  </ItemGroup>
+</Project>
